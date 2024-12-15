@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mortgage Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator-container">
+    <!-- Left Section -->
+    <div class="form-section">
+      <header>
+        <h1>Mortgage Calculator</h1>
+        <a href="#" class="clear-link">Clear All</a>
+      </header>
+      <form>
+        <label for="amount">Mortgage Amount</label>
+        <div class="input-group">
+          <span>£</span>
+          <input type="number" id="amount" placeholder="Enter amount">
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="term">Mortgage Term</label>
+            <div class="input-group">
+              <input type="number" id="term" placeholder="Years">
+              <span>years</span>
+            </div>
+          </div>
+          <div>
+            <label for="rate">Interest Rate</label>
+            <div class="input-group">
+              <input type="number" id="rate" placeholder="Rate">
+              <span>%</span>
+            </div>
+          </div>
+        </div>
+
+        <label>Mortgage Type</label>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="mortgage-type" value="repayment">
+            Repayment
+          </label>
+          <label>
+            <input type="radio" name="mortgage-type" value="interest-only">
+            Interest Only
+          </label>
+        </div>
+
+        <button type="submit" class="calculate-btn">
+          <span>📊</span> Calculate Repayments
+        </button>
+      </form>
+    </div>
+
+    <!-- Right Section -->
+    <div class="results-section">
+      <div class="results-placeholder">
+        <img src="https://via.placeholder.com/150" alt="Illustration">
+        <h2>Results shown here</h2>
+        <p>Complete the form and click "Calculate Repayments" to see what your monthly repayments would be.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
